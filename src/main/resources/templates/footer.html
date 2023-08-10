@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer page</title>
+</head>
+<body>
+<footer th:fragment="footer1(${title},${subtitle})">
+    <div class="container">
+
+        <h2>Made by Explorer Aadi</h2>
+        <h4 th:text="${title}"></h4>
+        <h4 th:text="${subtitle}"></h4>
+        <h1>
+            Feel free to contact
+        </h1>
+        <h1>Love to contribute to this project</h1>
+    </div>
+
+</footer>
+
+</body>
+</html>

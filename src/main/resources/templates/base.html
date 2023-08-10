@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org" th:fragment="layout(content)">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img th:src="@{/img/model1.png}" alt="Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="/aboutnew">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+<div class="card">
+    <h1 th:replace="${content}"></h1>
+</div>
+
+      <footer>
+          <p>&copy; 2023 Aditya Kumar. All rights reserved.</p>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>This is about page</h1>
+<h1 th:text="${name}"></h1>
+<h1 th:text="${currentDate}"></h1>
+<h1>this is addi</h1>
+<div th:with="a=5,b=45, n=${name}">
+    <h1>The value of a is <span th:text="${a}"></span></h1>
+    <h2>The sum of a and b is <span th:text="${a+b}"></span></h2>
+</div>
+
+</body>
+</html>
